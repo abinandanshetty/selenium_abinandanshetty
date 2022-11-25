@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parallel" thread-count="5" parallel="tests">
+  <test name="test1">
+    <classes>
+      <class name="dayone.SeleniumDemo"/>
+      <class name="day2.HandleMultipleWindow"/>
+      <class name="DayThree.AssignmentOne"/>
+    </classes>
+  </test> <!-- SampleTest -->
+  <test name="test2">
+    <classes>
+      <class name="day2.HandleDynamicElements"/>
+      <class name="sap.practice.FaceBook"/>
+      <class name="day2.HandleAutoSuggestions"/>
+      <class name="day2.DragDropExample"/>
+      <class name="day2.HandleFrames"/>
+      <class name="day2.ActionsClassExamples"/>
+      <class name="day2.ExplicitWaitDemo"/>
+    </classes>
+  </test>
+  <test name="test3">
+    <classes>
+      <class name="DayThree.MyFisrtTestNGTest"/>
+      <class name="DayThree.ValidateLogin"/>
+      <class name="dayone.AssignmentOne"/>
+      <class name="day2.HandleMultipleWindow2"/>
+      <class name="dayone.Assignment"/>
+      <class name="day2.HandleAlert"/>
+      <class name="dayone.FirstWebScript"/>
+    </classes>
+  </test>
+</suite> <!-- Parallel -->

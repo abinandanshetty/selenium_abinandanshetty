@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Parallel]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="test1(failed)">
+    <classes>
+      <class name="day2.HandleMultipleWindow">
+        <methods>
+          <include name="handleMultiple"/>
+        </methods>
+      </class> <!-- day2.HandleMultipleWindow -->
+      <class name="DayThree.AssignmentOne">
+        <methods>
+          <include name="assOne"/>
+        </methods>
+      </class> <!-- DayThree.AssignmentOne -->
+    </classes>
+  </test> <!-- test1(failed) -->
+  <test thread-count="5" parallel="tests" name="test2(failed)">
+    <classes>
+      <class name="sap.practice.FaceBook">
+        <methods>
+          <include name="categoryDelete"/>
+        </methods>
+      </class> <!-- sap.practice.FaceBook -->
+    </classes>
+  </test> <!-- test2(failed) -->
+  <test thread-count="5" parallel="tests" name="test3(failed)">
+    <classes>
+      <class name="day2.HandleAlert">
+        <methods>
+          <include name="handleAlert"/>
+        </methods>
+      </class> <!-- day2.HandleAlert -->
+      <class name="dayone.AssignmentOne">
+        <methods>
+          <include name="assOne"/>
+        </methods>
+      </class> <!-- dayone.AssignmentOne -->
+      <class name="DayThree.MyFisrtTestNGTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- DayThree.MyFisrtTestNGTest -->
+    </classes>
+  </test> <!-- test3(failed) -->
+</suite> <!-- Failed suite [Parallel] -->
